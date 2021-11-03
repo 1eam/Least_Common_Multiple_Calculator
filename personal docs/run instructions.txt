@@ -18,3 +18,9 @@ Run project
 2. Run command: mvn spring-boot:run
 	*To skip tests run: mvn -DskipTests spring-boot:run
 	*To quit application run: ctrl + c, Terminate Batch Job?: N (Kill PID if necessary)
+
+Use Project
+
+	Use http client like postman to send the requests.
+	perform a GET-request to path: localhost:8080/LeastCommonMultipleTill proceeded with a query parameter: num
+	Example: localhost:8080/LeastCommonMultipleTill?num=13
