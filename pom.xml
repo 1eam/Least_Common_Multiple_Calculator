@@ -9,9 +9,9 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.west.assignment</groupId>
-    <artifactId>prime_number_calculator</artifactId>
+    <artifactId>least_common_multiple_calculator</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>prime_number_calculator</name>
+    <name>least_common_multiple_calculator</name>
     <description>Demo project for Spring Boot</description>
     <properties>
         <java.version>11</java.version>
