@@ -7,8 +7,8 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 public class LCMTillCalculatorTest {
     @Test
     void ResultOfOneTill2(){
-        LCMTillCalculator lcmTillCalculator = new LCMTillCalculator();
-        String result = lcmTillCalculator.lcmFromOneTill(2);
+        LCMCalculator lcmCalculator = new LCMCalculator();
+        String result = lcmCalculator.fromOneTill(2);
         assertEquals("2", result);
 
     }
