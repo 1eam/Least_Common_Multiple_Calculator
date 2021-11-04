@@ -5,7 +5,6 @@ import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
 
 import java.util.Arrays;
-import java.util.HashMap;
 
 @Component
 public class HashTableFiller implements CommandLineRunner {
@@ -13,7 +12,7 @@ public class HashTableFiller implements CommandLineRunner {
 
     private int[] ranges = new int[22];
     public int[] primeNumbers = {1, 2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47};
-    public HashMap<String, String> hashMap = new HashMap<>();
+
 
     public HashTableFiller(LCMCalculator lcmCalculator) {
         this.lcmCalculator = lcmCalculator;
@@ -32,8 +31,7 @@ public class HashTableFiller implements CommandLineRunner {
              ranges[i] = i + 1;
         }
         for (int range : ranges) {
-            String lcm = lcmCalculator.fromOneTill(range);
-            hashMap.put(Integer.toString(range), lcm);
+            lcmCalculator.fromOneTill(range);
         }
         System.out.println(Arrays.toString(ranges));
     }

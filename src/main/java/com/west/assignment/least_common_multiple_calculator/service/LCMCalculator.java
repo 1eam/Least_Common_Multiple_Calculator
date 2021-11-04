@@ -4,19 +4,20 @@ import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.HashMap;
 import java.util.List;
 
 @Service
 public class LCMCalculator {
-    public LCMCalculator() {
-    }
+    public HashMap<int[], String> hashMap = new HashMap<>();
+
 
     public String fromOneTill(int i) {
         //range: [1, 2]
         int[] range = calculateRange(i);
         System.out.println(Arrays.toString(range));
 
-        lcm = caculateLCM(range);
+        String lcm = caculateLCM(range);
         return lcm;
     }
 
@@ -24,9 +25,13 @@ public class LCMCalculator {
         //        PrimeFactors of input
         List<Integer[]> primeFactorsOfxNumbers = calculatePrimeFactorsOf(numbers);
         //        actual LCM in int: 2520
-        int lcm = multiplyCommonFactors(primeFactorsOfxNumbers);
+        int intLCM = multiplyCommonFactors(primeFactorsOfxNumbers);
         //        cast value to String
-        return Integer.toString(lcm);
+        String lcm = Integer.toString(intLCM);
+        //        store value in hashtable for future lookup (O)1
+        hashMap.put(numbers, lcm);
+        return lcm;
+
     }
 
 
