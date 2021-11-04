@@ -19,12 +19,14 @@ public class Controller {
 
     @GetMapping("/LeastCommonMultiple")
     public String LeastCommonMultipleTill(@RequestParam("till") int userEntry){
-        final int[] range = lcmCalculator.calculateRange(userEntry);
-        String LCM = lcmCalculator.hashMap.get(range);
-        return LCM + " is the smallest number that can be divided by each of the numbers from 1 to " + userEntry + " without any remainder.";
+        //contains [1,2,3,4,5] format
+        int[] range = lcmCalculator.calculateRange(userEntry);
 
-//TODO  //At method-call check the result in the Hashtable & return immediately (O)1
+        //At method-call check for the result in the Hashtable & return immediately (O)1
+        String lcm = lcmCalculator.hashMap.get(range);
+        return lcm + " is the smallest number that can be divided by each of the numbers from 1 to " + userEntry + " without any remainder.";
 
+        
 //TODO  //No result in Hashtable?
 //TODO  //Calculate the LCM, return immediately & store the result in Hashtable for next request
     }
