@@ -74,7 +74,7 @@ public class LCMCalculator {
         return factor;
     }
 
-    private int[] calculateRange(int num) {
+    public int[] calculateRange(int num) {
         int[] range = new int[num];
 
         for (int i = 0; i < num; i++) {
