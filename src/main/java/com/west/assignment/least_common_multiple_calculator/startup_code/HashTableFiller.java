@@ -1,4 +1,4 @@
-package com.west.assignment.least_common_multiple_calculator.startup;
+package com.west.assignment.least_common_multiple_calculator.startup_code;
 
 import com.west.assignment.least_common_multiple_calculator.service.LCMCalculator;
 import org.springframework.boot.CommandLineRunner;

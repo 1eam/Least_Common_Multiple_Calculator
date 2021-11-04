@@ -1,7 +1,7 @@
 package com.west.assignment.least_common_multiple_calculator.controller;
 
 import com.west.assignment.least_common_multiple_calculator.service.LCMCalculator;
-import com.west.assignment.least_common_multiple_calculator.startup.HashTableFiller;
+import com.west.assignment.least_common_multiple_calculator.startup_code.HashTableFiller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
