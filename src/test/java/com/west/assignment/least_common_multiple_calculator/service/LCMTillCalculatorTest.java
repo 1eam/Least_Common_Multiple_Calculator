@@ -12,5 +12,13 @@ public class LCMTillCalculatorTest {
         assertEquals("2", result);
 
     }
+    @Test
+    void ResultOf2_9_10_Is_90(){
+        LCMCalculator lcmCalculator = new LCMCalculator();
+        int[] numbers = {2,9,10};
+        String result = lcmCalculator.caculateLCM(numbers);
+        assertEquals("90", result);
+
+    }
 
 }
