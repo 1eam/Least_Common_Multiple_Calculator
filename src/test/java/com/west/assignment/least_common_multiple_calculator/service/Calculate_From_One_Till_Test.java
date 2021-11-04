@@ -4,8 +4,8 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-public class LCMTillCalculatorTest {
-    //One till range tests
+public class Calculate_From_One_Till_Test {
+
     @Test
     void ResultOfOneTill_1(){
         LCMCalculator lcmCalculator = new LCMCalculator();
@@ -46,13 +46,4 @@ public class LCMTillCalculatorTest {
 
     }
 
-    //Random input combinations tests
-    @Test
-    void ResultOf2_9_10_Is_90(){
-        LCMCalculator lcmCalculator = new LCMCalculator();
-        int[] numbers = {2,9,10};
-        String result = lcmCalculator.caculateLCM(numbers);
-        assertEquals("90", result);
-
-    }
 }
