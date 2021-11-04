@@ -20,5 +20,4 @@ public class LCMTillCalculatorTest {
         assertEquals("90", result);
 
     }
-
 }
