@@ -33,7 +33,6 @@ public class HashTableFiller implements CommandLineRunner {
         }
         for (int range : ranges) {
             String lcm = lcmCalculator.fromOneTill(range);
-
             hashMap.put(Integer.toString(range), lcm);
         }
         System.out.println(Arrays.toString(ranges));
