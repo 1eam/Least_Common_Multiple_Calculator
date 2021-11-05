@@ -18,7 +18,11 @@ Plain correct answers to return are in Tests.
 
 After 23 dont use int's
 23 = 5,354,228,880
---------------------------------------------------------
+
+Usage of Long instead of BigInt for scope & performance-considerations (BigInt has theorethically no max)
+Therefore the max number to be returned will be 9223372036854775807 (as String)
+
+---------------------------------------------------------------------------------------------------------------
 
 Plan for nice-to-have: 2 - 13, 7 - 19, 12 - 25
 Bij opstart wordt de uitkomst van 25 waarden berekend en opgeslagen in de Hashtable
