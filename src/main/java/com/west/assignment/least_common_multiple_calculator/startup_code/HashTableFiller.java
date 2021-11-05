@@ -4,13 +4,11 @@ import com.west.assignment.least_common_multiple_calculator.service.LCMCalculato
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
 
-import java.util.Arrays;
-
 @Component
 public class HashTableFiller implements CommandLineRunner {
     private final LCMCalculator lcmCalculator;
 
-    private int[] ranges = new int[22];
+    private int[] ranges = new int[21];
 
     public HashTableFiller(LCMCalculator lcmCalculator) {
         this.lcmCalculator = lcmCalculator;
@@ -18,19 +16,18 @@ public class HashTableFiller implements CommandLineRunner {
 
     @Override
     public void run(String... args) throws Exception {
-        //Fills Hashtable with the LCM results ranging from 1 to 22
-        //After 23 we dont use ints. but Longs 23 = 5,354,228,880L
+        //Fills Hashtable with the LCM results ranging from 1 to 21
+        //Half of the requestable ranges(1-42), in order to maximize responsetime efficiency
         fillHashTable();
     }
 
     private void fillHashTable() {
-        //Ranges 1 - 22
-        for (int i = 0; i < 22 ; i++) {
+        //Ranges 1 - 21
+        for (int i = 0; i < 21 ; i++) {
              ranges[i] = i + 1;
         }
         for (int range : ranges) {
             lcmCalculator.fromOneTill(range);
         }
-        System.out.println(Arrays.toString(ranges));
     }
 }
