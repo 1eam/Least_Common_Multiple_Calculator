@@ -13,7 +13,7 @@ Prerequisites: Maven is installed on the machine & the Assestment project is unz
 
 Run project
 
-1. Navigate to the projects root directory /Assestment. (See that the pom.xml is located here)
+1. Navigate to the projects root directory /West - Assignment. (See that the pom.xml is located here)
 
 2. Run command: mvn spring-boot:run
 	*To skip tests run: mvn -DskipTests spring-boot:run
