@@ -46,7 +46,7 @@ Prerequisites: Maven is installed on the machine & the project is unzipped.
 
 **1. Install Project:**
 
-[Install Project](https://github.com/1eam/Least_Common_Multiple_Calculator/archive/refs/heads/master.zip)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[Direct install of Project](https://github.com/1eam/Least_Common_Multiple_Calculator/archive/refs/heads/master.zip) github.com/1eam/Least_Common_Multiple_Calculator/archive/refs/heads/master.zip
  
 **2. Install maven:**
  	 
@@ -59,14 +59,15 @@ Prerequisites: Maven is installed on the machine & the project is unzipped.
 
 ![Find Environment Variables](https://github.com/1eam/Least_Common_Multiple_Calculator/blob/master/installation%20instruction%20docs/Navigate%20to%20Environment%20Variables.png?raw=true)
  	
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;In the bottom tab (System Variables) search for 'Path'.
-Double click and add the /apache-maven-3.8.3/bin directory
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;In the bottom tab (System Variables) double-click on 'Path' and add the ```/apache-maven-3.8.3/bin``` directory
 ![System-Variables_Path](https://github.com/1eam/Least_Common_Multiple_Calculator/blob/master/installation%20instruction%20docs/System-Variables_Path.png?raw=true)
  
 **4. Test succesful installation of maven:**
- 
+
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;run: ```mvn -v``` response should look like:
+
 ![Run Maven Test](https://github.com/1eam/Least_Common_Multiple_Calculator/blob/master/installation%20instruction%20docs/Run%20Maven%20Test.png?raw=true)
+
 _Install reference: https://maven.apache.org/install.html#_
 
 ## Considered Updates:
@@ -75,4 +76,4 @@ _Install reference: https://maven.apache.org/install.html#_
 
 ## License
 
-none **Free Software :D✨**
+none **Free Software✨**
