@@ -1,4 +1,4 @@
-Answers 1 - 25:
+Answers 1 - 42:
 1 - 2
 1 - 3
 1 - 4
@@ -9,6 +9,22 @@ Answers 1 - 25:
 1 - 9
 1 - 10
 
-etc: write plain answers to return.
-Reason: To withstand the test of production: Big Oof1
+etc: are calculated and stored in a Hashtable for (O)1 return
+
+Reason: To withstand the test of production: Big(O)1
 	The faster return the better: under 30 seconds
+
+Plain correct answers to return are in Tests.
+
+After 23 we cant use int's
+result of 1 till 23 = 5,354,228,880
+
+Usage of Long to reach scope level (1-42)
+Therefore the max number to be returned will be 9223372036854775807 (as String)
+
+---------------------------------------------------------------------------------------------------------------
+
+Plan for nice-to-have: 2 - 13, 7 - 19, 12 - 25
+Bij opstart wordt de uitkomst van 25 waarden berekend en opgeslagen in de Hashtable
+Bij aanvraag checkt de applicatie eerst in de hashtable en returnt het resultaat meteen met (O)1
+Niet Aanwezig? Berekent hij de LCM en geeft de waarde terug. Dezelfde waarde wordt opgeslagen in de Hashtable
