@@ -1,4 +1,4 @@
-Answers 1 - 36:
+Answers 1 - 42:
 1 - 2
 1 - 3
 1 - 4
@@ -16,10 +16,10 @@ Reason: To withstand the test of production: Big(O)1
 
 Plain correct answers to return are in Tests.
 
-After 23 dont use int's
-23 = 5,354,228,880
+After 23 we cant use int's
+result of 1 till 23 = 5,354,228,880
 
-Usage of Long instead of BigInt for scope & performance-considerations (BigInt has theorethically no max)
+Usage of Long to reach scope level (1-42)
 Therefore the max number to be returned will be 9223372036854775807 (as String)
 
 ---------------------------------------------------------------------------------------------------------------
