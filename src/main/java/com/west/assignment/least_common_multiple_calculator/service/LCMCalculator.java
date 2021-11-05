@@ -36,10 +36,14 @@ public class LCMCalculator {
         return lcmAsString;
     }
 
-    //recursive function to find GCD of two numbers
-    public static long calculateGCD(int number, long lcm){
+    //Euclidean Algorithm to find GCD of two numbers (recursive)
+    public static long calculateGCD(long number, long lcm){
+        if(lcm == 0){
+            return number;
+        }
 
-        return BigInteger.valueOf(number).gcd(BigInteger.valueOf(lcm)).longValue();
+        return calculateGCD(lcm, number % lcm);
+        //TODO: Test time-performance of //return BigInteger.valueOf(number).gcd(BigInteger.valueOf(lcm)).longValue();
     }
 
     public int[] calculateRange(int num) {
