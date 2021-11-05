@@ -15,16 +15,17 @@ Example: 1,2,3,4,5 = 60
 
 
 ## Usage
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Use an http client like Postman to send the requests.
+    Use an http client like Postman to send the requests.
+    Perform a GET-request to path: localhost:8080/LeastCommonMultipleTill, proceeded with a query parameter: till
+    Example: localhost:8080/LeastCommonMultiple?till=13
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;```localhost:8080/LeastCommonMultiple?till=13```
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;perform a GET-request to path: localhost:8080/LeastCommonMultipleTill, proceeded with a query parameter: till
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The API will return a string containing:
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Example: ```localhost:8080/LeastCommonMultiple?till=13```
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The API will return a string containing ```360360 is the smallest number that can be divided by each of the numbers from 1 to 13 without any remainder.```
+    360360 is the smallest number that can be divided by each of the numbers from 1 to 13 without any remainder.
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;_Notes & Limits:_
- - _Insersing other than number will return statuscode of 400 - BAD Request_
+ - _Inserting value other than number will return statuscode of 400 - BAD Request_
  - _Note that its not possible to request a max-range greater then 42_
  - _Results of this application are tested based on the standards of [Calculator.net](https://www.calculator.net/lcm-calculator.html?numberinputs)_
 
@@ -55,24 +56,23 @@ Prerequisites: Maven is installed on the machine & the project is unzipped.
 **3. Add Maven to classpath:**
  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Navigate to Environment Variables
-![image info](./installation instruction docs/Navigate to Environment Variables.png)
+
+![Find Environment Variables](installation instruction docs/Navigate to Environment Variables.png)
  	
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;In the bottom tab (System Variables) search for 'Path'.
 Double click and add the /apache-maven-3.8.3/bin directory
-![image info](./installation instruction docs/System-Variables_Path.png)
+![System-Variables_Path](installation instruction docs/System-Variables_Path.png)
  
 **4. Test succesful installation of maven:**
  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;run: ```mvn -v``` response should look like:
-![image info](./installation instruction docs/Run Maven Test.png)
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Install reference: https://maven.apache.org/install.html#
+![Run Maven Test](installation instruction docs/Run Maven Test.png)
+_Install reference: https://maven.apache.org/install.html#_
 
 ## Considered Updates:
 - Ability to calculate lcm of range x till x. Example: 3 - 45, 13 - 17, 19 - 23
-- Ability to calculate lcm of x numbers. Where x are multiple random numbers. Example the LCM of 23, 4, 15 and 8 = 
+- Ability to calculate lcm of x numbers. Where x are multiple random numbers. Example the LCM of 23, 4, 15 and 8 = 2760
 
 ## License
 
-none
-
-**✨Free Software :D✨**
+none **Free Software :D✨**
