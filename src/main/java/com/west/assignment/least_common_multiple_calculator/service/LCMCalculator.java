@@ -1,8 +1,8 @@
 package com.west.assignment.least_common_multiple_calculator.service;
 
+import com.west.assignment.least_common_multiple_calculator.exceptions.MaxRangeReachedException;
 import org.springframework.stereotype.Service;
 
-import java.math.BigInteger;
 import java.util.HashMap;
 
 @Service
@@ -11,7 +11,12 @@ public class LCMCalculator {
 
     public String fromOneTill(int i) {
         //range: [1, 2]
-        int[] range = calculateRange(i);
+        int[] range = new int[0];
+        try {
+            range = calculateRange(i);
+        } catch (MaxRangeReachedException e) {
+            return e.getMessage();
+        }
         String lcm = caculateLCM(range);
 
         return lcm;
@@ -46,7 +51,10 @@ public class LCMCalculator {
         //TODO: Test time-performance of //return BigInteger.valueOf(number).gcd(BigInteger.valueOf(lcm)).longValue();
     }
 
-    public int[] calculateRange(int num) {
+    public int[] calculateRange(int num) throws MaxRangeReachedException {
+        if (num>42){
+            throw new MaxRangeReachedException("Error: maximum range requested is 1 - 42");
+        }
         int[] range = new int[num];
 
         for (int i = 0; i < num; i++) {

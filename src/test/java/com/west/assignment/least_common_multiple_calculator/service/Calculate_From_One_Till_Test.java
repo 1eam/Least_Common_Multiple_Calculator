@@ -89,4 +89,12 @@ public class Calculate_From_One_Till_Test {
 
     }
 
+    @Test
+    void ResultOfOneTill_43(){
+        LCMCalculator lcmCalculator = new LCMCalculator();
+        String result = lcmCalculator.fromOneTill(43);
+        assertEquals("Error: maximum range requested is 1 - 42", result);
+
+    }
+
 }
