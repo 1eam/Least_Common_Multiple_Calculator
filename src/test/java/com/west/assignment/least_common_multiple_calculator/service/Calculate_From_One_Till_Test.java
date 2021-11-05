@@ -4,6 +4,7 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
+//These testcases are based on the calculation of the following resource https://www.calculator.net/lcm-calculator.html
 public class Calculate_From_One_Till_Test {
 
     @Test
@@ -77,6 +78,14 @@ public class Calculate_From_One_Till_Test {
         LCMCalculator lcmCalculator = new LCMCalculator();
         String result = lcmCalculator.fromOneTill(25);
         assertEquals("26771144400", result);
+
+    }
+
+    @Test
+    void ResultOfOneTill_42(){
+        LCMCalculator lcmCalculator = new LCMCalculator();
+        String result = lcmCalculator.fromOneTill(42);
+        assertEquals("219060189739591200", result);
 
     }
 
