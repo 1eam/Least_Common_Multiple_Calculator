@@ -4,7 +4,7 @@ import com.west.assignment.least_common_multiple_calculator.controller.Controlle
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
-public class ControllerTest {
+public class ErrorsTest {
     //The applications max asked value is 1-42.
     //Anything above will return a wrong integer answer according to https://www.calculator.net/lcm-calculator.html
     //And should therefore return an exception when asked fromOneTill(42+)
