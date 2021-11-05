@@ -4,7 +4,7 @@ import com.west.assignment.least_common_multiple_calculator.controller.Controlle
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
-public class ExceptionHandlingTest {
+public class ControllerTest {
     //The applications max asked value is 1-42.
     //Anything above will return a wrong integer answer according to https://www.calculator.net/lcm-calculator.html
     //And should therefore return an exception when asked fromOneTill(42+)
@@ -15,7 +15,16 @@ public class ExceptionHandlingTest {
         LCMCalculator lcmCalculator = new LCMCalculator();
         Controller controller = new Controller(lcmCalculator);
         String result = controller.LeastCommonMultipleTill(43);
-        assertEquals("Error: maximum range requested is 1 - 42", result);
+        assertEquals("Error: maximum range requestable is 1 - 42", result);
+
+    }
+
+    @Test
+    void Controller_ResultOfOneTill_42(){
+        LCMCalculator lcmCalculator = new LCMCalculator();
+        Controller controller = new Controller(lcmCalculator);
+        String result = controller.LeastCommonMultipleTill(42);
+        assertEquals("219060189739591200 is the smallest number that can be divided by each of the numbers from 1 to 42 without any remainder.", result);
 
     }
 
