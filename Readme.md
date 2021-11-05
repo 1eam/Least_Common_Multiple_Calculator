@@ -30,7 +30,7 @@ Example: 1,2,3,4,5 = 60
 
  - _**Inserting value other than number will return statuscode of 400 - BAD Request**_
  - _**Note that its not possible to request a max-range greater then 42**_
- - _Results of this application are tested based on the standards of [Calculator.net](https://www.calculator.net/lcm-calculator.html?numberinputs)_
+ - _**Results of this application are tested based on the standards of [Calculator.net](https://www.calculator.net/lcm-calculator.html?numberinputs)**_
 
 
 ## Run Project
@@ -40,7 +40,7 @@ Prerequisites: Maven is installed on the machine & the project is unzipped.
 
 2. Run command: ```mvn spring-boot:run```
 	- To skip tests run: ```mvn -DskipTests spring-boot:run```
-	- To quit application run: ctrl + c, Terminate Batch Job?: N (Kill PID if necessary)
+	- To quit application press: ctrl + c, ```Terminate Batch Job(Y/N)?:``` N (Kill PID if necessary)
 3. Follow [usage instructions](#usage)
 
 
