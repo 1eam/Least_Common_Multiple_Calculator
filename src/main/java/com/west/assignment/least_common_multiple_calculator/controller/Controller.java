@@ -28,16 +28,16 @@ public class Controller {
             //Output
             return lcm + " is the smallest number that can be divided by each of the numbers from 1 to " + userEntry + " without any remainder.";
 
-        } catch (MaxRangeReachedException e) {
+        } catch (MaxRangeReachedException e){
             //contains string "Error: maximum range requested is 1 - 42"
             return e.getMessage();
         }
 
 
-
-        
 //TODO  //No result in Hashtable?
 //TODO  //Calculate the LCM, return immediately & store the result in Hashtable for next request
+
     }
 
+//NiceToHave   //Calculate LeastCommonMultiple From-Till
 }

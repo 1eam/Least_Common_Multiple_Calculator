@@ -55,8 +55,8 @@ public class LCMCalculator {
         if (num>42){
             throw new MaxRangeReachedException("Error: maximum range requested is 1 - 42");
         }
-        int[] range = new int[num];
 
+        int[] range = new int[num];
         for (int i = 0; i < num; i++) {
             range[i] = i + 1;
         }
