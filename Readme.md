@@ -1,18 +1,17 @@
-# LCM Calculator
+# LCM Calculator v1
 ## _*The Last API Ever, to find the LCM of a range of numbers*_
 
 <img src="https://3.bp.blogspot.com/-oGZMRz-z0Ho/WJAuvFCLv5I/AAAAAAAAEiU/9-o6cIouVoMIE7ISZH8wmMHKue-GsnTbQCLcB/s400/lcm2.PNG" alt="drawing" width="200"/>
 
-_...starting from 1_
-
 
 ## About Application
-Finds the smallest number that can be divided by a sequential set of numbers:
+Finds the smallest number that can be divided by a sequential set of numbers from 1 till a given range
 
 Example: 1,2,3,4,5 = 60
 
 60 is the smallest number that can be divided by each of the numbers from 1 to 5 without any remainder.
 
+_This program is intended to extend another application. For instance as (micro)service to your existing project_
 
 ## Usage
     #Instructions:
@@ -40,7 +39,7 @@ Prerequisites: Maven is installed on the machine & the project is unzipped.
 
 2. Run command: ```mvn spring-boot:run```
 	- To skip tests run: ```mvn -DskipTests spring-boot:run```
-	- To quit application press: ctrl + c, ```Terminate Batch Job(Y/N)?:``` N (Kill PID if necessary)
+	- To quit application run: ctrl + c, ```Terminate Batch Job(Y/N)?:``` N (Kill in task manager if necessary)
 3. Follow [usage instructions](#usage)
 
 
@@ -66,7 +65,7 @@ Prerequisites: Maven is installed on the machine & the project is unzipped.
 
 ![System-Variables_Path](https://github.com/1eam/Least_Common_Multiple_Calculator/blob/master/installation%20instruction%20docs/System-Variables_Path.png?raw=true)
  
-**4. Test succesful installation of maven:**
+**4. Test successful installation of maven:**
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;run: ```mvn -v``` response should look like:
 
