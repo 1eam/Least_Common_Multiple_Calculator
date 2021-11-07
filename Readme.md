@@ -1,4 +1,4 @@
-# LCM Calculator v1
+# LCM Calculator v2 (Not ready yet. Highly discouraged to install)
 ## _*The Last API Ever, to find the LCM of a range of numbers*_
 
 <img src="https://3.bp.blogspot.com/-oGZMRz-z0Ho/WJAuvFCLv5I/AAAAAAAAEiU/9-o6cIouVoMIE7ISZH8wmMHKue-GsnTbQCLcB/s400/lcm2.PNG" alt="drawing" width="200"/>
@@ -11,7 +11,12 @@ Example: 1,2,3,4,5 = 60
 
 60 is the smallest number that can be divided by each of the numbers from 1 to 5 without any remainder.
 
+**Updates in the v2 make:**
+- Ability to calculate LCM of range x till x. Example: 3 - 45, 13 - 17, 19 - 23
+- Ability to calculate LCM of x numbers. Where x are multiple random numbers. Example 23, 4, 15 and 8 = 2760
+
 _This program is intended to extend another application. For instance as (micro)service to your existing product_
+
 
 ## Usage
     #Instructions:
@@ -74,7 +79,7 @@ Prerequisites: Maven is installed on the machine & the project is unzipped.
 _Install reference: https://maven.apache.org/install.html#_
 
 
-## Considered Updates:
+## Updates in the make:
 - Ability to calculate LCM of range x till x. Example: 3 - 45, 13 - 17, 19 - 23
 - Ability to calculate LCM of x numbers. Where x are multiple random numbers. Example 23, 4, 15 and 8 = 2760
 
