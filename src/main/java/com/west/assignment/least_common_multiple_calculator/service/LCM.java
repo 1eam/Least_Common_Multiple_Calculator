@@ -6,16 +6,18 @@ import org.springframework.stereotype.Service;
 import java.util.Hashtable;
 
 @Service
-public class LCMCalculator {
+public class LCM {
     public static Hashtable<int[], String> hashtable = new Hashtable<>();
 
     public static String fromOneTill(int i) {
         try {
             int[] range = new int[0];
+
+            //range contains [1,2,3,4,5] format
             range = calculateRange(i);
             String lcm = caculateLCM(range);
+            return lcm + " is the smallest number that can be divided by each of the numbers from 1 to " + i + " without any remainder.";
 
-            return lcm;
         } catch (MaxRangeReachedException e) {
             return e.getMessage();
         }

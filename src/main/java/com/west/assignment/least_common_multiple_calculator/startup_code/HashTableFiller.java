@@ -1,6 +1,6 @@
 package com.west.assignment.least_common_multiple_calculator.startup_code;
 
-import com.west.assignment.least_common_multiple_calculator.service.LCMCalculator;
+import com.west.assignment.least_common_multiple_calculator.service.LCM;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
 
@@ -23,7 +23,7 @@ public class HashTableFiller implements CommandLineRunner {
              ranges[i] = i + 1;
         }
         for (int range : ranges) {
-            LCMCalculator.fromOneTill(range);
+            LCM.fromOneTill(range);
         }
     }
 }
