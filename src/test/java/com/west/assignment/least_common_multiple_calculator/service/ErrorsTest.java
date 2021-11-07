@@ -11,21 +11,17 @@ public class ErrorsTest {
 
     //Todo: Update with parameterized tests for: 43, 59, 137, 3152, 25245
     @Test
-    void ReturnValueOf_MaxRangeReachedException_When_ResultGreaterThen_42_IsRequested_At_ControllerLevel(){
-        LCMCalculator lcmCalculator = new LCMCalculator();
-        Controller controller = new Controller(lcmCalculator);
+    void ReturnsError_When_RequestedRangeIsGreaterThen_42(){
+        Controller controller = new Controller();
         String result = controller.LeastCommonMultipleTill(43);
         assertEquals("Error: maximum range requestable is 1 - 42", result);
-
     }
 
     @Test
     void Controller_ResultOfOneTill_42(){
-        LCMCalculator lcmCalculator = new LCMCalculator();
-        Controller controller = new Controller(lcmCalculator);
+        Controller controller = new Controller();
         String result = controller.LeastCommonMultipleTill(42);
         assertEquals("219060189739591200 is the smallest number that can be divided by each of the numbers from 1 to 42 without any remainder.", result);
-
     }
 
 }

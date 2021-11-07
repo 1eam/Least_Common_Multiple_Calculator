@@ -7,9 +7,9 @@ import java.util.Hashtable;
 
 @Service
 public class LCMCalculator {
-    public Hashtable<int[], String> hashtable = new Hashtable<>();
+    public static Hashtable<int[], String> hashtable = new Hashtable<>();
 
-    public String fromOneTill(int i) {
+    public static String fromOneTill(int i) {
         try {
             int[] range = new int[0];
             range = calculateRange(i);
@@ -21,7 +21,7 @@ public class LCMCalculator {
         }
     }
 
-    public String caculateLCM(int[] numbers) {
+    public static String caculateLCM(int[] numbers) {
         long intLCM = numbers[0];
         long gcd = numbers[0];
 
@@ -48,7 +48,7 @@ public class LCMCalculator {
         return calculateGCD(lcm, number % lcm);
     }
 
-    public int[] calculateRange(int num) throws MaxRangeReachedException {
+    public static int[] calculateRange(int num) throws MaxRangeReachedException {
         //Throw Exception when input is greater then 42, but still calculate the key for storage in Hashtable
         if (num>42){
             int[] range = new int[num];
@@ -66,5 +66,14 @@ public class LCMCalculator {
         }
 
         return range;
+    }
+
+    public static int[] calculatePossibleKey(int userEntry) {
+        int[] possibleKey = new int[userEntry];
+        for (int i = 0; i < userEntry; i++) {
+            possibleKey[i] = i + 1;
+        }
+        return possibleKey;
+
     }
 }

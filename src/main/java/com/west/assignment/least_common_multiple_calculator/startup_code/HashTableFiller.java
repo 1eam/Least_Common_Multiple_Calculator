@@ -4,30 +4,26 @@ import com.west.assignment.least_common_multiple_calculator.service.LCMCalculato
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
 
+//Fills the static hashtable with values of the LCM ranging from from 1 - 21
+//So results of the LCM of: 1-2, 1-3, 1-4, 1-5 .etc
+//Thats half of the requestable ranges(1-42), in order to improve responsetime efficiency
+
 @Component
 public class HashTableFiller implements CommandLineRunner {
-    private final LCMCalculator lcmCalculator;
 
     private int[] ranges = new int[21];
 
-    public HashTableFiller(LCMCalculator lcmCalculator) {
-        this.lcmCalculator = lcmCalculator;
-    }
-
     @Override
     public void run(String... args) throws Exception {
-        //Fills Hashtable with the LCM results ranging from 1 to 21
-        //Half of the requestable ranges(1-42), in order to maximize responsetime efficiency
         fillHashTable();
     }
 
     private void fillHashTable() {
-        //Ranges 1 - 21
         for (int i = 0; i < 21 ; i++) {
              ranges[i] = i + 1;
         }
         for (int range : ranges) {
-            lcmCalculator.fromOneTill(range);
+            LCMCalculator.fromOneTill(range);
         }
     }
 }
